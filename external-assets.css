@@ -1,0 +1,10 @@
+.brand .mark img{width:25px;height:25px;display:block;filter:brightness(0) invert(1)}
+.intro h1 span{color:inherit}.intro h1>.accent-dot{color:var(--orange)}
+.intro-object{display:grid;place-items:center;filter:none;transform:rotate(3deg);isolation:isolate}
+.intro-object:before{content:"";position:absolute;width:76%;aspect-ratio:1;border-radius:50%;background:var(--green);z-index:-1;box-shadow:18px 20px 0 #304ffe33}
+.intro-object .object-3d{display:block;width:min(100%,330px);aspect-ratio:1;object-fit:contain;mix-blend-mode:normal;filter:drop-shadow(0 22px 18px #17171733);animation:asset-float 4.8s ease-in-out infinite}
+.overview-mark{object-fit:contain;filter:invert(48%) sepia(99%) saturate(2997%) hue-rotate(338deg) brightness(105%);border:0}
+.empty .empty-icon{display:block;width:82px;height:82px;margin:auto;filter:invert(22%) sepia(94%) saturate(5099%) hue-rotate(232deg) brightness(98%)}
+@keyframes asset-float{50%{transform:translateY(-9px) rotate(-2deg)}}
+@media(max-width:520px){.intro-object .object-3d{width:150px}}
+@media(prefers-reduced-motion:reduce){.intro-object .object-3d{animation:none}}
